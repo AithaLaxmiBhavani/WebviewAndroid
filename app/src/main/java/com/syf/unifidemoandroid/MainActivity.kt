@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         // set on-click listener
         dbuyButton.setOnClickListener {
-            val intent = Intent(this, MerchantPageActivity::class.java)
+            val intent = Intent(this, DBuyWebviewActivity::class.java)
             intent.putExtra("jsonData",dbuyPayload)
             startActivity(intent)
         }
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         val unifyJsonData1 = mapper.writeValueAsString(tipFormModal)
         // set on-click listener
         syfButtonClick.setOnClickListener {
-            val intent = Intent(this, SyfPageActivity::class.java)
+            val intent = Intent(this, UniFiWebviewActivity::class.java)
             intent.putExtra("jsonData", unifyJsonData1)
             startActivity(intent)
         }

@@ -1,20 +1,16 @@
 
 package com.syf.unifidemoandroid
 
-import TipFormModal
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.webkit.*
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 
-class SyfPageActivity : AppCompatActivity() {
+class UniFiWebviewActivity : AppCompatActivity() {
     private val TAG = "SyfPageActivity"
     private lateinit var syfWebView : WebView
     private lateinit var jsonPayload : String

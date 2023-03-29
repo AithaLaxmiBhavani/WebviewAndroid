@@ -21,14 +21,14 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".SyfPageActivity"
+            android:name=".UniFiWebviewActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MerchantPageActivity"
+            android:name=".DBuyWebviewActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
