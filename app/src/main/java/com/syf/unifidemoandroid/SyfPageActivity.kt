@@ -51,7 +51,7 @@ class SyfPageActivity : AppCompatActivity() {
         override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
             return if (url != null && (url.startsWith("https://dpdpone.syfpos.com/cs/")
                         || url.startsWith("https://www.synchrony.com/")
-                        || url.startsWith("https://qbuy.syf.com/")) || url.startsWith("https://pdppone.syfpos.com/cs/")) {
+                        || url.startsWith("https://qbuy.syf.com/")) || url.startsWith("https://pdpone.syfpos.com/cs/")) {
                 view.context.startActivity(
                     Intent(Intent.ACTION_VIEW, Uri.parse(url))
                 )
