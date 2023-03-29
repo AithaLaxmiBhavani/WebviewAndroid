@@ -17,7 +17,7 @@ class UniFiWebviewActivity : AppCompatActivity() {
     private lateinit var closeButton : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_syf_page)
+        setContentView(R.layout.activity_unifi_page)
 
         // Custom code..
         supportActionBar?.hide()

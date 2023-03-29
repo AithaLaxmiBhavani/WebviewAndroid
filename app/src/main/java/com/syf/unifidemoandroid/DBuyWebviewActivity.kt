@@ -18,7 +18,7 @@ class DBuyWebviewActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_merchant_page)
+        setContentView(R.layout.activity_dbuy_page)
 
         // Custom code..
         supportActionBar?.hide()
