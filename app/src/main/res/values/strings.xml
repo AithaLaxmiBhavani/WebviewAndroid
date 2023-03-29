@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Native App</string>
+    <string name="dbuy_name">Synchrony Payments</string>
+    <string name="unifi_name">Synchrony Payments UniFi</string>
+</resources>

@@ -1,0 +1,32 @@
+package com.syf.unifidemoandroid
+
+class DBuyTipFormModal(
+    val processInd: String,
+    val tokenId: String,
+    val merchantID: String,
+    val childMid: String,
+    val clientTransId: String,
+    val custFirstName: String,
+    val custLastName: String,
+    val custZipCode: String,
+    val cardNumber: String,
+    val expMonth: String,
+    val expYear: String,
+    val iniPurAmt: String,
+    val custAddress1: String,
+    val custAddress2: String,
+    val phoneNumber: String,
+    val emailAddress: String,
+    val custCity: String,
+    val custState: String,
+    val upeProgramName: String,
+    val transPromo1: String,
+    val transAmount1: String,
+    val transPromo2: String,
+    val transAmount2: String,
+    val transPromo3: String,
+    val transAmount3: String,
+    val mid : String,
+    val pcgc: String,
+    val defaultPromoCode: String
+)
