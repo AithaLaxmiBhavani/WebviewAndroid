@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="./merchant.js"></script>
+    <script type="text/javascript" src="https://qbuy.syf.com/digitalbuy/js/merchant_ff_v2.js"></script>
     <script type="text/javascript">
-            function loadJsonObject(data){
+            function loadJsonObjectAndroid(data){
                  let jsonObject = JSON.stringify(data)
                  syfDBuy.calldBuyProcess(null,JSON.parse(jsonObject))
                  window.setTimeout(()=>{document.getElementById("syfCrossButton").style.display='none'},3000)

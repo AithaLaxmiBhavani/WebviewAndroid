@@ -13,6 +13,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         android:text="Syf Dbuy Checkout "
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,6 +24,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/button_dbuy"
         android:layout_marginTop="50dp"
+        android:textColor="#000000"
         android:text="Syf Unifi Checkout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

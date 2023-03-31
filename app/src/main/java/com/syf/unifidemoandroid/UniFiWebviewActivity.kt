@@ -8,13 +8,14 @@ import android.net.Uri
 import android.os.Bundle
 import android.webkit.*
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class UniFiWebviewActivity : AppCompatActivity() {
     private val TAG = "SyfPageActivity"
     private lateinit var syfWebView : WebView
     private lateinit var jsonPayload : String
-    private lateinit var closeButton : Button
+    private lateinit var closeButton : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_unifi_page)
@@ -45,9 +46,19 @@ class UniFiWebviewActivity : AppCompatActivity() {
             return super.shouldInterceptRequest(view, request)
         }
         override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
-            return if (url != null && (url.startsWith("https://dpdpone.syfpos.com/cs/")
-                        || url.startsWith("https://www.synchrony.com/")
-                        || url.startsWith("https://qbuy.syf.com/")) || url.startsWith("https://pdpone.syfpos.com/cs/")) {
+            return if (url != null &&
+                         (url.startsWith("https://dpdpone.syfpos.com/cs/")
+                          || url.startsWith("https://qpdpone.syfpos.com/cs/")
+                          || url.startsWith("https://pos.dapply.syf.com/cs/")
+                          || url.startsWith("https://www.synchrony.com/")
+                          || url.startsWith("https://qbuy.syf.com/"))
+                          || url.startsWith("https://pdpone.syfpayments.com/cs/")
+                          || url.startsWith("https://etail.mysynchrony.com/cs/")
+                          || url.startsWith("https://buy.syf.com/cs/")
+                          || url.startsWith("https://bnpl.syf.com/cs/")
+                          ||url.startsWith("https://detail.mysynchrony.com/")
+                          || url.startsWith("https://pos.qapply.syf.com/cs/")
+                          || url.startsWith("https://www.usa.gov/")){
                 view.context.startActivity(
                     Intent(Intent.ACTION_VIEW, Uri.parse(url))
                 )
